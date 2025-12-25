@@ -1,0 +1,33 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+.venv/
+env/
+
+# Tests (not needed at runtime)
+tests/
+
+# Git
+.git/
+.gitignore
+
+# Docs & misc
+docs/
+Github_link.txt
+README.md
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Docker files
+docker-compose.yml
+
+# Jupyter / IDE
+.ipynb_checkpoints/
+.vscode/
+.idea/

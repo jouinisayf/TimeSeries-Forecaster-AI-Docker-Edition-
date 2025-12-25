@@ -1,0 +1,26 @@
+services:
+  data-ingestor:
+    build: .
+    container_name: data-ingestor
+    command: python src/preprocess.py
+    volumes:
+      - ./shared:/app/shared
+      - ./data:/app/data
+
+  model-trainer:
+    build: .
+    container_name: model-trainer
+    command: python src/train.py
+    depends_on:
+      - data-ingestor
+    volumes:
+      - ./shared:/app/shared
+
+  visualizer:
+    build: .
+    container_name: visualizer
+    command: python src/visualize.py
+    depends_on:
+      - model-trainer
+    volumes:
+      - ./shared:/app/shared

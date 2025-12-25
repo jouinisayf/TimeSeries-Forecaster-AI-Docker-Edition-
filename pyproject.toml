@@ -1,0 +1,39 @@
+[project]
+name = "timeseries-forecaster-ai"
+version = "0.1.0"
+description = "ARIMA and GARCH based time series forecasting tool"
+authors = [
+    {name = "Saief Eddine Jouini",email = "sayfjouini89@gmail.com"}
+]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.10,<3.14"
+dependencies = [
+    "pandas (>=2.3.3,<3.0.0)",
+    "numpy (>=1.26.0,<3.0.0)",
+    "matplotlib (>=3.10.7,<4.0.0)",
+    "seaborn (>=0.13.2,<0.14.0)",
+    "statsmodels (>=0.14.5,<0.15.0)",
+    "arch (>=8.0.0,<9.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+package-mode = false
+
+[dependency-groups]
+dev = [
+    "ruff (>=0.14.6,<0.15.0)",
+    "pre-commit (>=4.4.0,<5.0.0)",
+    "pytest (>=9.0.1,<10.0.0)",
+    "pdoc (>=16.0.0,<17.0.0)"
+]
+
+[tool.ruff]
+line-length = 120
+select = ["E", "F", "W"]
+ignore = ["E501"]
