@@ -2,7 +2,7 @@
 
 Automatic ARIMA + GARCH forecasting pipeline deployed using a **multi-container Docker architecture**.
 
-This version of the project focuses on **containerization, reproducibility and orchestration** using **Docker Compose**, as required for the TP (Courses 7–8).
+This version of the project focuses on containerization, reproducibility, and orchestration using Docker Compose, as required for the TP “Run your software anywhere with Docker” in the Technological Foundations of Computer Science course.
 
 ##  Objective
 
