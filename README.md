@@ -67,7 +67,7 @@ No Python or Poetry installation is required on the host machine.
 ### Step 1 — Clone the repository
 ```bash
 git clone https://github.com/jouinisayf/TimeSeries-Forecaster-AI-Docker-Edition-
-cd TimeSeries-Forecaster-AI
+cd TimeSeries-Forecaster-AI-Docker-Edition-
 ```
 
 ### Step 2 — Build and start the containers
