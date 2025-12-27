@@ -33,7 +33,7 @@ All containers share a common directory using Docker volumes.
 
 ##  Project Structure
 ```
-TimeSeries-Forecaster-AI/
+TimeSeries-Forecaster-AI-Docker-Edition-/
 ├── data/
 │ └── gld_price_data.csv
 ├── src/
